@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Data</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+    .container{
+            margin-top: 10%;
+            margin-left: 30%;
+            position:absolute;
+            height: 340px;
+            width:590px;
+            background-color: antiquewhite;
+            font-size:  20px;
+            padding-left: 120px;
+            padding-top: 28px;
+            border: solid 3px black;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+</style>
+<body>
+    <div class="container">
+        <h2 style="color: brown; padding-left: 150px;">User Data</h2>
+        <p>Name:  <span id="name1"></span></p>
+        <p>Surname: <span id="surnm"></span></p>
+        <p>Address: <span id="add1"></span></p>
+        <p>Department: <span id="dept1"></span></p>
+        <p>Mobile No: <span id="mob1"></span></p>
+        <p>Email: <span id="email1"></span></p>
+        <script>
+            document.getElementById("name1").innerHTML = localStorage.getItem("NAME");
+            document.getElementById("surnm").innerHTML = localStorage.getItem("LNAME");
+            document.getElementById("add1").innerHTML = localStorage.getItem("ADD");
+            document.getElementById("dept1").innerHTML = localStorage.getItem("DEPT");
+            document.getElementById("mob1").innerHTML = localStorage.getItem("MOBILE");
+            document.getElementById("email1").innerHTML = localStorage.getItem("EID");
+        </script>
+    </div>
+</body>
+</html>
+
